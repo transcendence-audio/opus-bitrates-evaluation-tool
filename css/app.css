@@ -95,3 +95,11 @@ footer {
   padding: 1em 2em;
   border-radius: 4px;
 }
+
+#dropdownWrapper {
+  margin-bottom: 20px;
+}
+#folderSelect {
+  font-size: 16px;
+  padding: 5px;
+}
