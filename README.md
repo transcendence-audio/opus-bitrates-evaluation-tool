@@ -17,12 +17,8 @@ If you'd like to test your own files locally, encode files using the `opusenc` (
 ```bash
 sudo apt install ffmpeg
 sudo apt-get install opus-tools
+bash run.sh music.wav parlato_en
 
+https://0.0.0.0/
 
-#!/usr/bin/env bash
-for BITRATE in 2 6 10 16 32 64 96 128 192 512
-do
-  opusenc --hard-cbr --max-delay 0 --bitrate $BITRATE music.wav music-$BITRATE.opus
-  ffmpeg -i music-$BITRATE.opus -c copy music-$BITRATE.webm  # Safari/Webkit support
-done
 ```
